@@ -10,7 +10,7 @@
 	<h1 style="color: red; font-size: 40px;" align="center">WE ARE SUCCESSFULLY DEPLOYED APPLICATION</h1>
 <h1 style="color: blue; font-size: 40px;" align="center">Pavan application</h1>
 	
-	
+	<h1 style="color: blue; font-size: 40px;" align="center">Khan Jaffa Bhai application</h1>
 	
 	
 	
