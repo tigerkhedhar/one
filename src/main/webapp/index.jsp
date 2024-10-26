@@ -13,8 +13,10 @@
 <h1 style="color: blue; font-size: 40px;" align="center">Pavan application</h1>
 	
 	<h1 style="color: blue; font-size: 40px;" align="center">Tiger application</h1>
+	<h1 style="color: blue; font-size: 40px;" align="center">Tiger application</h1>
+<h1 style="color: blue; font-size: 40px;" align="center">Tiger application</h1>
 	
-	
+<h1 style="color: blue; font-size: 40px;" align="center">Tiger application</h1>
 	
 	
 	
