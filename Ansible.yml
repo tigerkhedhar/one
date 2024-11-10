@@ -1,0 +1,30 @@
+---
+
+- hosts: DEV
+  connection: ssh
+
+  tasks:
+    - name: Installing java-11
+      command: yum install java-1.8.0-openjdk state=present
+
+    - name: Download a file from website
+      get_url:
+        url: https://downloads.apache.org/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9.0.96.tar.gz
+        dest: "/root"
+
+    - name: Untar
+      command: tar -zxvf apache-tomcat-9.0.96.tar.gz
+
+    - name: context.xml
+      copy:
+        src: "context.xml"
+        dest: "/root/apache-tomcat-9.0.96/webapps/manager/META-INF/context.xml"
+
+    - name: set-credential
+      copy:
+        src: "tomcat-users.xml"
+        dest: "/root/apache-tomcat-9.0.96/conf/tomcat-users.xml"
+
+    - name: start
+      shell: nohup /root/apache-tomcat-9.0.96/bin/startup.sh
+    
