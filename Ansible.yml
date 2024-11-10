@@ -5,7 +5,7 @@
 
   tasks:
     - name: Installing java-11
-      command: yum install java-1.8.0-openjdk state=present
+      yum: name=java-1.8.0-openjdk state=present
 
     - name: Download a file from website
       get_url:
