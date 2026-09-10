@@ -1,6 +1,6 @@
 ---
 
-- hosts: DEV
+- hosts: DEv
   connection: ssh
 
   tasks:
